@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peru y sus Regiones</title>
+    <link rel="shortcut icon" href="img/logo_tierra.webp" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/costa_peru.jpg" width="350px" height="220px" class="d-block w-100 mt-3" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/selva_peru.jpg" width="350px" height="220px" class="d-block w-100 mt-3" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/sierra_peru.jpg" width="350px" height="220px" class="d-block w-100 mt-3" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Barra de Navegacion</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#region-peru"><i class="bi bi-heart"></i> Regiones del Peru</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#historia-peru"><i class="bi bi-heart"></i> Historia</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+<style>
+    .mari,#cielo,.card-text{
+        text-align: justify;
+    }
+    #cielo{
+        display: none;
+    }
+</style>
+        
+                    <h1 id="region-peru" class="display-3">Regiones Del Peru</h1>
+                    <p class="mari">El Perú está dividido en tres grandes regiones naturales: Costa, Sierra y Selva. La Costa, ubicada a lo largo del océano Pacífico, es una región árida con valles fértiles y una economía centrada en la pesca, la agricultura y la industria.</p>
+                    <p id="cielo">La Sierra, en la cordillera de los Andes, destaca por su topografía montañosa y su clima variado, siendo rica en recursos minerales y agrícolas, y con una profunda herencia cultural indígena. Por último, la Selva cubre gran parte del este del país, con su densa vegetación tropical y una biodiversidad incomparable, siendo un centro de recursos naturales, aunque enfrenta retos como la deforestación. Cada una de estas regiones aporta un carácter único al país.</p>
+    
+                    <button onclick="mostrarMas()" type="button" class="btn btn-outline-primary mb-4">Leer Mas...</button>
+                    <script>
+                        function mostrarMas() {
+                            var extraText = document.getElementById("cielo");
+                            if (cielo.style.display === "none") {
+                            cielo.style.display = "block";  // Muestra el texto extra
+                            } else {
+                            cielo.style.display = "none";   // Oculta el texto extra
+                            }
+                        }
+                    </script>
+
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/costa1.jpg" height="150px" class="card-img-top" alt="Costa">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">COSTA</h5>
+                                    <p class="card-text">Se distingue como la costa a la larga y estrecha región litoral del Perú entre el océano Pacífico y las estribaciones de los Andes peruanos. En su mayor parte, constituye una zona de clima cálido o templado caracterizado por sus bajas precipitaciones.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/sierra1.jpg" height="150px" class="card-img-top" alt="Sierra">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">SIERRA</h5>
+                                    <p class="card-text">En el Perú, la región de la Sierra, también llamada Región Alto andina o Serranía es la región montañosa y de altiplanicies del país constituida por las tierras medias y altas de la cordillera de los Andes. Se extiende a lo largo del país de norte a sur y dentro de la geografía del Perú constituye una región geográfica tradicional.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/selva1.jpg" height="150px" class="card-img-top" alt="Selva">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">SELVA</h5>
+                                    <p class="card-text">En el Perú, la Selva y el Oriente son denominaciones locales de la Amazonia, la gran selva tropical de América del Sur. La porción de territorio que este bioma ocupa, tiene un área de más de 782.800 km² desde las estribaciones orientales de la cordillera de los Andes hasta los límites políticos con Ecuador, Colombia, Brasil y Bolivia en el llano amazónico.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <div class="clearfix">
+                        <img src="img/peru.png" id="historia-peru" height="260px" width="370px" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+                    
+                        <p class="mari">
+                            El Perú es un país diverso que destaca tanto por su geografía como por su cultura. Su división en tres regiones naturales —costa, sierra y selva— refleja una riqueza en recursos y tradiciones que lo convierten en un país único en Sudamérica.
+                        </p>
+                    
+                        <p class="mari">
+                            El Perú, dividido en costa, sierra y selva, es un país diverso y rico en recursos. La costa, con su clima árido y su cercanía al Pacífico, concentra gran parte de la población y las actividades industriales y pesqueras, destacando ciudades como Lima. La sierra, dominada por los Andes, alberga una gran riqueza cultural, agrícola y minera, siendo cuna de importantes civilizaciones como la Inca. Por su parte, la selva amazónica es una región extensa y biodiversa que resguarda flora, fauna y comunidades indígenas únicas, aportando recursos naturales esenciales.
+                        </p>
+
+                        <p class="mari">
+                            El Perú no solo es reconocido por sus paisajes y ecosistemas, sino también por su aporte cultural al mundo, como su gastronomía, la cual combina ingredientes autóctonos con influencias de diversas partes del mundo, creando una de las cocinas más celebradas internacionalmente. Su historia, sus tradiciones y su compromiso con la preservación de su patrimonio hacen del Perú un país fascinante y esencial en la historia y cultura global.
+                        </p>
+                    </div>
+                </div>
+
+                    <div class="row">
+                        <img src="img/responsive.jpg" class="img-fluid mb-5" alt="...">
+                    </div>
+            </div>
+                        
+        </div>
+    </div>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
